@@ -53,3 +53,9 @@ def test_get_word():
 
 def test_crct_guessed_letter():
     assert hangman.crct_guessed_letter("elephant",['e'])== 'e_e_____'
+
+def test_crct_wrong_guessed_letter():
+    assert hangman.crct_guessed_letter("elephant",['x'])== '________'
+
+
+
