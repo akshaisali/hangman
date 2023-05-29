@@ -52,11 +52,13 @@ def test_get_word():
     assert secret_value =='________'
 
 def test_crct_guessed_letter():
-    assert hangman.crct_guessed_letter("elephant",['e'])== 'e_e_____'
+    assert hangman.crct_guessed_letter("elephant",['p'])== '___p____'
 
 def test_wrong_guessed_letter():
     assert hangman.crct_guessed_letter("elephant",['x'])== '________'
 
 def test_no_guessed_letter():
     assert hangman.crct_guessed_letter("elephant",[' '])== '________'
+def test_rep_guessed_letter():
+    assert hangman.crct_guessed_letter("elephant",['e'])== 'e_e_____'
 
