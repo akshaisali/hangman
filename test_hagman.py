@@ -50,3 +50,6 @@ def test_masked_word():
 def test_get_word():
     secret_value= hangman.get_word("elephant") 
     assert secret_value =='________'
+
+def test_crct_guessed_letter():
+    assert hangman.crct_guessed_letter("elephant",['e'])== 'e_e_____'
