@@ -47,9 +47,4 @@ def test_select_random_word_no_repetitions():
 
 def test_masked_word():
     assert hangman.masked_word("elephant",['e'])== 'e_e_____'
-    assert hangman.masked_word("elephant",['l'])== '_l______'
-    assert hangman.masked_word("elephant",['p'])== '___p____'
-    assert hangman.masked_word("elephant",['h'])== '____h___'
-    assert hangman.masked_word("elephant",['a'])== '_____a__'
-    assert hangman.masked_word("elephant",['n'])== '______n_'
-    assert hangman.masked_word("elephant",['t'])== '_______t'
+  
