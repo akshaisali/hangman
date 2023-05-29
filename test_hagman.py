@@ -1,4 +1,3 @@
-
 import hangman
 import os
 import tempfile
@@ -47,4 +46,7 @@ def test_select_random_word_no_repetitions():
 
 def test_masked_word():
     assert hangman.masked_word("elephant",['e'])== 'e_e_____'
-  
+
+def test_get_word():
+    secret_value= hangman.get_word("elephant") 
+    assert secret_value =='________'
